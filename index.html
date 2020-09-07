@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://www.wallpapers.net/spot-light-background-hd-wallpaper/download/1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<p align="right"><a href="https://monkeylearn.com/sentiment-analysis/"> <button><b style="color:black;font-size:20px;font-family:candara">More info</b></button>
+</p>
+</a>
+
+<br>
+<br>
+<br>
+
+<center> <font color="#001a33" font family="Maiandra GD"> <b> <h1 style="color:black;font-size:50px;font-family:candara" >SENTIMENT ANALYZER</h1></b>  </font><br>
+<form action="{{ url_for('y_predict')}}"method="post">
+<center> <font size="10"> <input type="string" name="Review" placeholder="Review" required="required" size=50/>
+<br>
+<br>
+<center> <input type="submit" class="btn btn-primary btn-block btn-Large"  value="Predict" style="width:10%" />
+</font>
+</center>
+</center>
+</form>
+{{ prediction_text }}
+<br>
+<br>
+<img src="https://www.intellectyx.com/wp-content/uploads/2019/05/sentiment_analysis_50.jpeg" alt="" width="440" height="235">
+<br>
+
+<p align="center"><a href="/"> <button><b style="color:black;font-size:20px;font-family:candara"> Home </b> </button>
+</p>
+</body>
+</html>
